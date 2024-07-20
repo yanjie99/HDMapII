@@ -1,0 +1,59 @@
+{
+  "type": 1,
+  "position":"-35.38, 30.04， 0.00",
+  "v2odistance": 296,
+  "omaxlength": 54,
+  "omaxwidth": 25,
+  "omaxheight": 170,
+  "vehicleid": "p1id2"
+}
+
+
+{
+  "type": 1,
+  "position":"-30.73，30.88， 0.00",
+  "v2odistance": 67,
+  "omaxlength": 54,
+  "omaxwidth": 25,
+  "omaxheight": 170,
+  "vehicleid": "p1id2"
+}
+
+{
+    "type": 1,
+    "position":"-27.92, 33.55， 0.00",
+    "v2odistance": 296,
+    "omaxlength": 54,
+    "omaxwidth": 25,
+    "omaxheight": 170,
+    "vehicleid": "p1id2"
+  }
+
+
+
+  {
+    "objecttype": 0,
+    "objectlocation": "10.43, -78.88, 0.00",
+    "v2odistance": 1090,
+    "omaxlength": 241,
+    "omaxwidth": 174,
+    "omaxheight": 67
+  }
+
+  {
+    "objecttype": 0,
+    "objectlocation": "10.43, -78.88, 0.00",
+    "v2odistance": 1473,
+    "omaxlength": 241,
+    "omaxwidth": 174,
+    "omaxheight": 67
+  }
+
+  {
+    "objecttype": 0,
+    "objectlocation": "10.43, -78.88, 0.00",
+    "v2odistance": 4020,
+    "omaxlength": 241,
+    "omaxwidth": 174,
+    "omaxheight": 67
+  }
