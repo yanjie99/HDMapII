@@ -1,60 +1,43 @@
 # HDMapII
-Paper: XXX
-# <img src="figures/leap.png" alt="icon" style="width: 40px; height: 40px; vertical-align: middle;"> Continuously <span style="color:#ff7e5f">Le</span>arning, <span style="color:#ff7e5f">A</span>dapting, and Im<span style="color:#ff7e5f">p</span>roving: A Dual-Process Approach to <span style="color:#ff7e5f">A</span>utonomous <span style="color:#ff7e5f">D</span>riving
+# <img src="figures/hdmapii.ico" alt="icon" style="width: 40px; height: 40px; vertical-align: middle;"> An <span style="color:#ff7e5f">Approach</span> of <span style="color:#ff7e5f">H</span>igh <span style="color:#ff7e5f">D</span>efintion <span style="color:#ff7e5f">M</span>ap <span style="color:#ff7e5f">I</span>nformation <span style="color:#ff7e5f">I</span>nteraction for <span style="color:#ff7e5f">C</span>onnected <span style="color:#ff7e5f">A</span>utonomous <span style="color:#ff7e5f">V</span>ehicle
 
-[![Custom badge](https://img.shields.io/badge/Arxiv-pdf-8A2BE2?logo=arxiv)](https://arxiv.org/abs/2405.15324) [![Custom badge](https://img.shields.io/badge/Project-page-green?logo=document)](https://leapad-2024.github.io/LeapAD/) ![GitHub license](https://img.shields.io/badge/License-Apache--2.0-red)
+
+[![Custom badge](https://img.shields.io/badge/Arxiv-pdf-8A2BE2?logo=arxiv)](https://arxiv.org) [![Custom badge](https://img.shields.io/badge/Project-page-green?logo=document)](https://) ![GitHub license](https://img.shields.io/badge/License-Apache--2.0-red)
 
 <!-- **<span style="color:#ff7e5f">LeapAD</span>**, a new autonomous driving paradigm inspired by human cognition, improves adaptability and interpretability in complex scenarios through dual-process decision-making and continuous learning from past experiences. -->
 
 
-> Jianbiao Mei<sup>1,2,\*</sup>, Yukai Ma<sup>1,2,\*</sup>, Xuemeng Yang<sup>2</sup>, Licheng Wen<sup>2</sup>, Xinyu Cai<sup>2</sup>, Xin Li<sup>2,3</sup>, Daocheng Fu<sup>2</sup>, Bo Zhang<sup>2</sup>, Pinlong Cai<sup>2</sup>, Min Dou<sup>2</sup>, Botian Shi<sup>2,†</sup>, Liang He<sup>3</sup>, Yong Liu<sup>1,†</sup>, Yu Qiao<sup>2</sup> <br>
-> <sup>1</sup> Zhejiang University <sup>2</sup> Shanghai Artificial Intelligence Laboratory <sup>3</sup> East China Normal University<br>
+> Yanjie Zhang<sup>1</sup>, Wei Huang<sup>1,2,†</sup>, Chun Liu<sup>2,\*</sup>, Hangbin Wu<sup>2</sup>, Akcram<sup>2</sup><br>
+> <sup>1</sup> Urban Mobility Institute, Tongji University, China <sup>2</sup> College of Surveying and Geo-Informatics, Tongji University, China <sup>3</sup> Department of Civil Engineering, Toronto Metropolitan University, Canada<br>
 > <sup>\*</sup> Equal Contribution <sup>†</sup> Corresponding Authors
 
 ## 📖 News
 
-- `[2024-5-27]` The paper can be accessed at [arxiv](https://arxiv.org/abs/2405.15324)
+- `[2024-5-27]` The paper can be accessed at [arxiv](https://arxiv.org/)
 
-- `[2024-5-22]` We released our project website [here](https://leapad-2024.github.io/LeapAD/)
+- `[2024-7-20]` We released our project website [here](https://)
 
 ---
 
 ## 🎯 Overview
-We introduce **<span style="color:#ff7e5f">LeapAD</span>**, a novel paradigm for autonomous driving inspired by the human cognitive process. Specifically, LeapAD emulates human attention by selecting critical objects relevant to driving decisions, simplifying environmental interpretation, and mitigating decision-making complexities. Additionally, LeapAD incorporates an innovative dual-process decision-making module, which consists of an **Analytic Process** (System-II) for thorough analysis and reasoning, along with a **Heuristic Process** (System-I) for swift and empirical processing. 
+We introduce **<span style="color:#ff7e5f">HDMapII</span>**, a novel approach to information interaction for connected autonomous vehicles empowered by high-definition maps. HDMapII consists of five main components: the **database** for HD map information management, the **information interaction modes** between autonomous driving vehicle and HD map, the **communication methods** for various types of dynamic information within HD map information database, the information **communication protocol** applied at different interaction modes and the approach to achieving a complete HD map information interaction process.
 
 <div style="text-align:center;">
   <img src="figures/figure1.png" alt="pipeline" width="600">
 </div>
 
-The <span style="color:#B46504">scene understanding module</span> analyzes surrounding images and provides descriptions of critical objects that may influence driving decisions. These scenario descriptions are then fed into the <span style="color:#EA6B66">dual-process decision module</span> for reasoning and decision-making. The generated decisions are then transmitted to <span style="color:#A680B8">action executor</span>, where they are converted into control signals for interaction with the <span style="color: #1BA1E2">simulator</span>. 
-The Analytic Process then uses an LLM to accumulate driving analysis and decision-making experience and conduct reflection on accidents. The experience is stored in the <span style="color:#009600">memory bank</span> and transferred to a lightweight language model, forming our Heuristic Process for quick responses and continuous learning.
+In the RoadRunner <span style="color:#A680B8">simulator</span>, HDMapII utilizes open-source map data, such as OpenStreetMap(OSM), to <span style="color:#EA6B66">rebuild real road environment</span> (including lane markings, curbs, surrounding built environment, etc.) and <span style="color:#EA6B66">generate HD map data</span> for storage in HD map information database. These scenario data are then used in <span style="color:#009600">different information interaction modes</span> respectively and allocated to the corresponding communication methods based on the characteristics of the information itself. Finally, in autonomous driving scenarios, all information interactions between autonomous vehicles and HD maps are conducted based on the <span style="color:#B46504">MQTT protocol</span>. As the process progresses, newly generated HD map data can be updated to the HD map information database for potential future interactions.
 
-<div style="text-align:center;">
-    <img src="figures/reflection.png" alt="pipeline" width="600">
-</div>
 
-When Heuristic Process encounters traffic accidents, the Analytic Process intervenes, analyzing historical frames to pinpoint errors and provide corrected samples. These corrected samples are then integrated into the memory bank to facilitate continuous learning.
-
-<!-- The **Analytic Process** is designed for thorough analysis and reasoning. It handles complex scenarios and builds a comprehensive memory bank for high-quality driving decisions. The Analytic Process accumulates experience and updates the memory bank through analysis of accidents and self-reflection. This accumulated knowledge can be transferred into the Heuristic Process by supervised fine-tuning (SFT), ensuring the entire LeapAD system can continuously improve and adapt to new driving environments and challenges.
-
-The **Heuristic Process** uses several strategies to perform closed-loop decisions.  It is designed to enable instant decision-making within the vehicle. The Heuristic Process relies on knowledge transferred from the analytical process to make fast and efficient decisions during driving. This lightweight model ensures fast response and adaptability in various driving scenarios, maintaining a high level of performance with minimal computing resources. -->
-
-## 🛣️ Demo Video in CARLA
+## 🛣️ Demo Video in RoadRunner combined with MATLAB
 
 <video width="800" controls>
-  <source src="videos/case2.mp4" type="video/mp4">
+  <source src="videos/PGPS_Final.mp4" type="video/mp4">
 </video>
 
 
+We conduct closed-loop tests in MATLAB. It can be seen that XXX 
 
-https://github.com/PJLab-ADG/LeapAD/assets/18390668/f5383343-a5cd-4fd3-aaf7-98302d9ea6cf
-
-
-https://github.com/PJLab-ADG/LeapAD/assets/18390668/a4dd470f-c1ef-4e55-8537-ded2ae8101d6
-
-
-We conduct closed-loop tests in CARLA. It can be seen that LeapAD can make informed decisions using the Heuristic Process with only 1.8B parameters while driving. 
-<!-- Experiments show that LeapAD outperforms all methods that rely solely on camera input, requiring 1-2 orders of magnitude less annotated data. As the memory base expands, Heuristic Process with only 1.8B parameters can inherit the knowledge of GPT-4 powered Analytic Process and achieve continuous performance improvements. -->
 
 ## 📄 License
 
