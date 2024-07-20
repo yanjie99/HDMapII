@@ -7,7 +7,7 @@
 
 
 
-> Yanjie Zhang<sup>1</sup>, Wei Huang<sup>1,2,†</sup>, Chun Liu<sup>2,\*</sup>, Hangbin Wu<sup>2</sup>, Akcram<sup>2</sup><br>
+> Yanjie Zhang<sup>1,\*</sup>, Wei Huang<sup>1,2,3,\*,†</sup>, Akram Akbar<sup>2</sup>, Hangbin Wu<sup>1,2</sup>, Chun Liu<sup>1,2,\*,†</sup><br>
 > <sup>1</sup> Urban Mobility Institute, Tongji University, China <sup>2</sup> College of Surveying and Geo-Informatics, Tongji University, China <sup>3</sup> Department of Civil Engineering, Toronto Metropolitan University, Canada<br>
 > <sup>\*</sup> Equal Contribution <sup>†</sup> Corresponding Authors
 
