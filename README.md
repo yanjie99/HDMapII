@@ -2,7 +2,7 @@
 # <img src="figures/hdmapii.ico" alt="icon" style="width: 40px; height: 40px; vertical-align: middle;"> An <span style="color:#ff7e5f">Approach</span> of <span style="color:#ff7e5f">H</span>igh <span style="color:#ff7e5f">D</span>efintion <span style="color:#ff7e5f">M</span>ap <span style="color:#ff7e5f">I</span>nformation <span style="color:#ff7e5f">I</span>nteraction for <span style="color:#ff7e5f">C</span>onnected <span style="color:#ff7e5f">A</span>utonomous <span style="color:#ff7e5f">V</span>ehicle
 
 
-[![Custom badge](https://img.shields.io/badge/Arxiv-pdf-8A2BE2?logo=arxiv)](https://arxiv.org) [![Custom badge](https://img.shields.io/badge/Project-page-green?logo=document)](https://) ![GitHub license](https://img.shields.io/badge/License-Apache--2.0-red)
+[![Custom badge](https://img.shields.io/badge/Arxiv-pdf-8A2BE2?logo=arxiv)](https://arxiv.org) [![Custom badge](https://img.shields.io/badge/Project-page-green?logo=document)](https://) ![GitHub license](https://www.apache.org/licenses/LICENSE-2.0)
 
 <!-- **<span style="color:#ff7e5f">LeapAD</span>**, a new autonomous driving paradigm inspired by human cognition, improves adaptability and interpretability in complex scenarios through dual-process decision-making and continuous learning from past experiences. -->
 
