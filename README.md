@@ -30,12 +30,20 @@ In the RoadRunner <span style="color:#A680B8">simulator</span>, HDMapII utilizes
 
 
 ## 🛣️ Demo Video in RoadRunner combined with MATLAB
-
+- Pedestrian Ghost Probe Scenario
 <video width="800" controls>
   <source src="videos/PGPS_Final.mp4" type="video/mp4">
 </video>
-[![Watch the video](https://img.youtube.com/vi/uWJD2UlZEeg/maxresdefault.jpg)](https://www.youtube.com/watch?v=uWJD2UlZEeg)
 
+- Unkown of Object Scenario
+<video width="800" controls>
+  <source src="videos/UOS_Final.mp4" type="video/mp4">
+</video>
+
+- Lane Scale Traffic Control Scenario
+<video width="800" controls>
+  <source src="videos/LSTCS_Final.mp4" type="video/mp4">
+</video>
 
 
 We conduct closed-loop tests in MATLAB. It can be seen that XXX 
