@@ -40,7 +40,7 @@ In the RoadRunner <span style="color:#A680B8">simulator</span>, HDMapII utilizes
 
 
 
-We conduct closed-loop tests in MATLAB. It can be seen that XXX 
+We conduct closed-loop tests in MATLAB. It can be seen that HDMapII can provide the prior information for connected autonomous vehicles, enabling them to make timely decisions. In contrast, regular vehicles, lacking interactive support methods, may spend more time on their journeys due to the inability to respond promptly to unexpected situations. 
 
 
 ## 📄 License
