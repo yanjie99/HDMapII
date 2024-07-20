@@ -13,9 +13,7 @@
 
 ## 📖 News
 
-- `[2024-5-27]` The paper can be accessed at [arxiv](https://arxiv.org/)
-
-- `[2024-7-20]` We released our project website [here](https://)
+- `[2024-7-20]` We released our project website [here](https://github.com/yanjie99/HDMapII)
 
 ---
 
