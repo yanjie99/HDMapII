@@ -31,14 +31,12 @@ In the RoadRunner <span style="color:#A680B8">simulator</span>, HDMapII utilizes
 - Pedestrian Ghost Probe Scenario
 [![Watch the video](https://img.youtube.com/vi/uWJD2UlZEeg/maxresdefault.jpg)](https://www.youtube.com/watch?v=uWJD2UlZEeg)
 
-https://www.youtube.com/watch?v=uWJD2UlZEeg
-
 - Unkown of Object Scenario
-
+[![Watch the video](https://img.youtube.com/vi/eML9u1wdsxs/maxresdefault.jpg)](https://www.youtube.com/watch?v=eML9u1wdsxs)
 
 
 - Lane Scale Traffic Control Scenario
-
+[![Watch the video](https://img.youtube.com/vi/b9_OAiUFXcs/maxresdefault.jpg)](https://www.youtube.com/watch?v=b9_OAiUFXcs)
 
 
 
