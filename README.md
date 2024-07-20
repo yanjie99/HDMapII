@@ -34,7 +34,8 @@ In the RoadRunner <span style="color:#A680B8">simulator</span>, HDMapII utilizes
 <video width="800" controls>
   <source src="videos/PGPS_Final.mp4" type="video/mp4">
 </video>
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/eML9u1wdsxs)
+[![Watch the video](https://img.youtube.com/vi/uWJD2UlZEeg/maxresdefault.jpg)](https://www.youtube.com/watch?v=uWJD2UlZEeg)
+
 
 
 We conduct closed-loop tests in MATLAB. It can be seen that XXX 
