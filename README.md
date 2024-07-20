@@ -20,7 +20,7 @@
 ## 🎯 Overview
 We introduce **<span style="color:#ff7e5f">HDMapII</span>**, a novel approach to information interaction for connected autonomous vehicles empowered by high-definition maps. HDMapII consists of five main components: the **database** for HD map information management, the **information interaction modes** between autonomous driving vehicle and HD map, the **communication methods** for various types of dynamic information within HD map information database, the information **communication protocol** applied at different interaction modes and the approach to achieving a complete HD map information interaction process.
 
-<div style="text-align:center;">
+<div style="text-align: center;">
   <img src="figures/figure1.png" alt="pipeline" width="600">
 </div>
 
