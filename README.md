@@ -56,12 +56,18 @@ The communication protocol used for information exchange in all modes is [MQTT](
 <p align="center"><img src="figures/cvmode_mqtt.png" alt="pipeline" width="600"></p>
 
 ## Scenario Design
+To test our proposed information interaction methods, we designed three specific scenarios representing common traffic situations in the physical world to evaluate the effectiveness of the information exchange process. The scenarios are named **Pedestrian Ghost Probe**, **Unknown Object on the Road**, and **Lane-scale Traffic Control**, respectively. Each scenario includes the following components: autonomous vehicles (with communication capability), ordinary vehicles (without communication capability), dynamic objects (such as pedestrian), and static objects (such as unknown objects, traffic signs, etc.).
 
 <p align="center"><img src="figures/pgps.png" alt="pipeline" width="600"></p>
 
+
+
 <p align="center"><img src="figures/uos.png" alt="pipeline" width="600"></p>
 
+
+
 <p align="center"><img src="figures/lstcs.png" alt="pipeline" width="600"></p>
+
 
 
 
