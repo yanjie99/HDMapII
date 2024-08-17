@@ -4,7 +4,7 @@
 
 [![Custom badge](https://img.shields.io/badge/Project-page-green?logo=document)](https://) [![GitHub license](https://img.shields.io/badge/License-Apache--2.0-red)](https://www.apache.org/licenses/LICENSE-2.0)
 
-
+[**Yanjie Zhang**](https://yanjie99.github.io/) *&* [**Wei Huang**](https://huangweibuct.github.io/weihuang.github.io/)
 
 
 <!-- Yanjie Zhang<sup>1,\*</sup>, Wei Huang<sup>1,2,3,\*,†</sup>, Akram Akbar<sup>2</sup>, Hangbin Wu<sup>1,2</sup>, Chun Liu<sup>1,2,\*,†</sup><br><-->
@@ -46,11 +46,10 @@ In Vehicle-to-Vehicle mode, the information exchanged from the vehicle end to th
 
 In Cloud-to-Vehicle mode, the information exchanged from the cloud to the vehicle is mainly the **RRTI**, including traffic signal light information, traffic flow information, traffic control information, traffic event information, and road surface object information. The information sender is HD Map cloud database terminal, and the receivers are any autonomous vehicles that require the data.
 
+## Information Communication Protocol
+The communication protocol used for information exchange in all modes is [MQTT](https://mqtt.org/).
+
 ## Scenario Construction
-
-
-
-## Communication Protocol
 
 
 
