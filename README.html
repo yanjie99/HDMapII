@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>HDMapII</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="hdmapii">HDMapII</h1>
+<h1 id="-an-approach-of-high-defintion-map-information-interaction-for-connected-autonomous-vehicle"><img src="file:///c:\Users\zyj\HDMapII\figures\hdmapii.ico" alt="icon" style="width: 40px; height: 40px; vertical-align: middle;"> An <span style="color:#ff7e5f">Approach</span> of <span style="color:#ff7e5f">H</span>igh <span style="color:#ff7e5f">D</span>efintion <span style="color:#ff7e5f">M</span>ap <span style="color:#ff7e5f">I</span>nformation <span style="color:#ff7e5f">I</span>nteraction for <span style="color:#ff7e5f">C</span>onnected <span style="color:#ff7e5f">A</span>utonomous <span style="color:#ff7e5f">V</span>ehicle</h1>
+<p><a href="https://"><img src="https://img.shields.io/badge/Project-page-green?logo=document" alt="Custom badge"></a> <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/License-Apache--2.0-red" alt="GitHub license"></a></p>
+<p><a href="https://yanjie99.github.io/"><strong>Yanjie Zhang</strong></a> <em>&amp;</em> <a href="https://huangweibuct.github.io/weihuang.github.io/"><strong>Wei Huang</strong></a></p>
+<!-- Yanjie Zhang<sup>1,\*</sup>, Wei Huang<sup>1,2,3,\*,†</sup>, Akram Akbar<sup>2</sup>, Hangbin Wu<sup>1,2</sup>, Chun Liu<sup>1,2,\*,†</sup><br><-->
+<!-- <sup>1</sup> Urban Mobility Institute, Tongji University, China <sup>2</sup> College of Surveying and Geo-Informatics, Tongji University, China <sup>3</sup> Department of Civil Engineering, Toronto Metropolitan University, Canada<br>
+> <sup>\*</sup> Equal Contribution <sup>†</sup> Corresponding Authors-->
+<h2 id="-news">📖 News</h2>
+<ul>
+<li><code>[2024-7-20]</code> We released our project website <a href="https://github.com/yanjie99/HDMapII">here</a></li>
+</ul>
+<hr>
+<h2 id="-overview">🎯 Overview</h2>
+<p>We introduce <strong><span style="color:#ff7e5f">HDMapII</span></strong>, a novel approach to information interaction for connected autonomous vehicles empowered by high-definition maps. HDMapII consists of five main components: the <strong>database</strong> for HD map information management, the <strong>information interaction modes</strong> between autonomous driving vehicle and HD map, the <strong>communication methods</strong> for various types of dynamic information within HD map information database, the information <strong>communication protocol</strong> applied at different interaction modes and the approach to achieving a complete HD map information interaction process.</p>
+<p align="center">
+  <img src="file:///c:\Users\zyj\HDMapII\figures\figure1.png" alt="pipeline" width="600">
+</p>
+<p>In the RoadRunner <span style="color:#A680B8">simulator</span>, HDMapII utilizes open-source map data, such as OpenStreetMap(OSM), to <span style="color:#EA6B66">rebuild real road environment</span> (including lane markings, curbs, surrounding built environment, etc.) and <span style="color:#EA6B66">generate HD map data</span> for storage in HD map information database. These scenario data are then used in <span style="color:#009600">different information interaction modes</span> respectively and allocated to the corresponding communication methods based on the characteristics of the information itself. Finally, in autonomous driving scenarios, all information interactions between autonomous vehicles and HD maps are conducted based on the <span style="color:#B46504">MQTT protocol</span>. As the process progresses, newly generated HD map data can be updated to the HD map information database for potential future interactions.</p>
+<h2 id="dynamic-informarion">Dynamic Informarion</h2>
+<p>We systematically design the content and exchange format for dynamic information in HD Maps, focusing on two key components: <strong>Road Real-time Information (RRTI)</strong> and <strong>Vehicle Dynamic Information (VDI)</strong>. The following figure illustrates the primary components of this dynamic information. For additional details, please refer to the DynamicInfo.xlsx file.</p>
+<p align="center"><img src="file:///c:\Users\zyj\HDMapII\figures\rrti.png" alt="pipeline" width="600"></p>
+<p align="center"><img src="file:///c:\Users\zyj\HDMapII\figures\vdi.png" alt="pipeline" width="600"></p>
+<h2 id="information-interaction-modes">Information Interaction Modes</h2>
+<p>We propose three information interaction modes tailored to the various data terminals within HD Maps: Vehicle-to-Cloud mode, Vehicle-to-Vehicle mode and Cloud-to-Vehicle mode.</p>
+<p align="center"><img src="file:///c:\Users\zyj\HDMapII\figures\vcmode.png" alt="pipeline" width="600"></p>
+<p>In Vehicle-to-Cloud mode, the information exchanged from the vehicle terminal to the cloud is mainly the <strong>VDI</strong>, including vehicle status information, temporary traffic sign information, and temporary event information. Information sender is every autonomous vehicle and the reveiver is HD Map cloud databases terminals.</p>
+<p align="center"><img src="file:///c:\Users\zyj\HDMapII\figures\vvmode.png" alt="pipeline" width="600"></p>
+<p>In Vehicle-to-Vehicle mode, the information exchanged from the vehicle end to the vehicle end is mainly the <strong>VDI</strong>, including vehicle status information and temporary road object information. The sender and receiver of the information are different autonomous vehilces.</p>
+<p align="center"><img src="file:///c:\Users\zyj\HDMapII\figures\cvmode.png" alt="pipeline" width="600"></p>
+<p>In Cloud-to-Vehicle mode, the information exchanged from the cloud to the vehicle is mainly the <strong>RRTI</strong>, including traffic signal light information, traffic flow information, traffic control information, traffic event information, and road surface object information. The information sender is HD Map cloud database terminal, and the receivers are any autonomous vehicles that require the data.</p>
+<h2 id="information-communication-protocol">Information Communication Protocol</h2>
+<p>The communication protocol used for information exchange in all modes is <a href="https://mqtt.org/">MQTT</a>. Refer to the diagram below for the communication specifications of each interaction mode.</p>
+<p align="center"><img src="file:///c:\Users\zyj\HDMapII\figures\vcmode_mqtt.png" alt="pipeline" width="600"></p>
+<p align="center"><img src="file:///c:\Users\zyj\HDMapII\figures\vvmode_mqtt.png" alt="pipeline" width="600"></p>
+<p align="center"><img src="file:///c:\Users\zyj\HDMapII\figures\cvmode_mqtt.png" alt="pipeline" width="600"></p>
+<h2 id="scenario-construction">Scenario Construction</h2>
+<h2 id="️-demo-video-in-roadrunner-combined-with-matlab">🛣️ Demo Video in RoadRunner combined with MATLAB</h2>
+<ul>
+<li>
+<p>Pedestrian Ghost Probe Scenario
+<a href="https://www.youtube.com/watch?v=uWJD2UlZEeg"><img src="https://img.youtube.com/vi/uWJD2UlZEeg/maxresdefault.jpg" alt="Watch the video"></a></p>
+</li>
+<li>
+<p>Unkown of Object Scenario
+<a href="https://www.youtube.com/watch?v=eML9u1wdsxs"><img src="https://img.youtube.com/vi/eML9u1wdsxs/maxresdefault.jpg" alt="Watch the video"></a></p>
+</li>
+<li>
+<p>Lane Scale Traffic Control Scenario
+<a href="https://www.youtube.com/watch?v=b9_OAiUFXcs"><img src="https://img.youtube.com/vi/b9_OAiUFXcs/maxresdefault.jpg" alt="Watch the video"></a></p>
+</li>
+</ul>
+<p>We conduct closed-loop tests in MATLAB. It can be seen that HDMapII can provide the prior information for connected autonomous vehicles, enabling them to make timely decisions. In contrast, regular vehicles, lacking interactive support methods, may spend more time on their journeys due to the inability to respond promptly to unexpected situations.</p>
+<h2 id="-license">📄 License</h2>
+<p>This project is released under the <a href="LICENSE">Apache 2.0 license</a>.</p>
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=efcg-QYGKIpFCov3jbTzu1Pp1Vu5BVHBOjBruEb6YLU"></script>
+
+            
+            
+        </body>
+        </html>

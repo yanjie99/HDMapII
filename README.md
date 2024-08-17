@@ -79,4 +79,4 @@ We conduct closed-loop tests in MATLAB. It can be seen that HDMapII can provide 
 
 This project is released under the [Apache 2.0 license](LICENSE). 
 
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=efcg-QYGKIpFCov3jbTzu1Pp1Vu5BVHBOjBruEb6YLU"></script>
+
