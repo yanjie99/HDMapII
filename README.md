@@ -47,7 +47,13 @@ In Vehicle-to-Vehicle mode, the information exchanged from the vehicle end to th
 In Cloud-to-Vehicle mode, the information exchanged from the cloud to the vehicle is mainly the **RRTI**, including traffic signal light information, traffic flow information, traffic control information, traffic event information, and road surface object information. The information sender is HD Map cloud database terminal, and the receivers are any autonomous vehicles that require the data.
 
 ## Information Communication Protocol
-The communication protocol used for information exchange in all modes is [MQTT](https://mqtt.org/).
+The communication protocol used for information exchange in all modes is [MQTT](https://mqtt.org/). Refer to the diagram below for the communication specifications of each interaction mode.
+
+<p align="center"><img src="figures/vcmode_mqtt.png" alt="pipeline" width="600"></p>
+
+<p align="center"><img src="figures/vvmode_mqtt.png" alt="pipeline" width="600"></p>
+
+<p align="center"><img src="figures/cvmode_mqtt.png" alt="pipeline" width="600"></p>
 
 ## Scenario Construction
 
