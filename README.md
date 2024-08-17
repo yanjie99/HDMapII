@@ -33,16 +33,22 @@ We systematically design the content and exchange format for dynamic information
 
 ## Information Interaction Modes
 We propose three information interaction modes tailored to the various data terminals within HD Maps: Vehicle-to-Cloud mode, Vehicle-to-Vehicle mode and Cloud-to-Vehicle mode.
+
 <p align="center"><img src="figures/vcmode.png" alt="pipeline" width="600"></p>
+
 In Vehicle-to-Cloud mode, the information exchanged from the vehicle terminal to the cloud is mainly the **VDI**, including vehicle status information, temporary traffic sign information, and temporary event information. Information sender is every autonomous vehicle and the reveiver is HD Map cloud databases terminals.
 
 <p align="center"><img src="figures/vvmode.png" alt="pipeline" width="600"></p>
+
 In Vehicle-to-Vehicle mode, the information exchanged from the vehicle end to the vehicle end is mainly the **VDI**, including vehicle status information and temporary road object information. The sender and receiver of the information are different autonomous vehilces.
 
 <p align="center"><img src="figures/cvmode.png" alt="pipeline" width="600"></p>
+
 In Cloud-to-Vehicle mode, the information exchanged from the cloud to the vehicle is mainly the **RRTI**, including traffic signal light information, traffic flow information, traffic control information, traffic event information, and road surface object information. The information sender is HD Map cloud database terminal, and the receivers are any autonomous vehicles that require the data.
 
 ## Scenario Construction
+
+
 
 ## Communication Protocol
 
