@@ -55,7 +55,13 @@ The communication protocol used for information exchange in all modes is [MQTT](
 
 <p align="center"><img src="figures/cvmode_mqtt.png" alt="pipeline" width="600"></p>
 
-## Scenario Construction
+## Scenario Design
+
+<p align="center"><img src="figures/pgps.png" alt="pipeline" width="600"></p>
+
+<p align="center"><img src="figures/uos.png" alt="pipeline" width="600"></p>
+
+<p align="center"><img src="figures/lstcs.png" alt="pipeline" width="600"></p>
 
 
 
