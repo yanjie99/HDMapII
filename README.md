@@ -143,8 +143,8 @@ In RoadRunner r2024a, the traffic elements in the area are simulated and recreat
 - - 1 step1.m -> step2_2.m -> step2.m
 - - 2 PGPS_AD1_V2V_Receive_final.m (Configure the information receiving port)
 - - 3 PGPS_interaction_p1ad1_2476.m (Information interaction simulation)
-- - 4 step4Velocity2Time_PGPS.m (Speed-time analysis of the actor.)
-- - 5 RouteOutput_PGPS.m & RouteOutputIndividually_PGPS.m (Path trajectory analysis of the actor.)
+- - 4 step4Velocity2Time_PGPS.m (Speed-time analysis of the actor)
+- - 5 RouteOutput_PGPS.m & RouteOutputIndividually_PGPS.m (Path trajectory analysis of the actor)
 
 ## 📄 License
 
