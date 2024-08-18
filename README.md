@@ -119,8 +119,32 @@ We conduct closed-loop tests in MATLAB. It can be seen that HDMapII can provide 
 - PostgreSQL 16
 - roadrunner ([Connect MATLAB and RoadRunner to control and analyze simulations](https://ww2.mathworks.cn/help/driving/ug/connect-matlab-and-roadrunner.html))
 - ThingSpeak ([An IoT analytics platform service that allows you to aggregate, visualize and analyze live data streams in the cloud](https://thingspeak.com/pages/learn_more))
-- OpenStreetMap ([Target area map data source](https://www.openstreetmap.org/search?query=%E4%B8%8A%E6%B5%B7%E7%AB%B9%E6%9E%97%E8%B7%AF#map=18/31.22541/121.52887))
+- OpenStreetMap ([Static map data source](https://www.openstreetmap.org))
 - Simulink (Optional, only for further analysis)
+
+## Quick Start
+#### Generating data
+Static map data is downloaded from OpenStreetMap. The [experimental area](https://www.openstreetmap.org/search?query=%E4%B8%8A%E6%B5%B7%E7%AB%B9%E6%9E%97%E8%B7%AF#map=18/31.22541/121.52887) includes three roads in Shanghai, China: Zhulin Road, Xiangcheng Road, Fushan Road.
+
+#### Data processing
+Raw map data in OpenDRIVE format is collected from OpenStreetMap. The raw data is imported and preprocessed using MATLAB's Automated Driving Toolbox. Three major intersecting roads within the target area are extracted, and the road environment in that area is recreated. The processed data is then exported to RoadRunner for simulation modeling of realistic traffic scenarios.
+
+#### Data storage
+A high-definition map information management database is created in PostgreSQL to store the information. The database creation code is available at [here](https://github.com/yanjie99/HDMapII/tree/main/code/HDMapDB).
+
+#### Scenario construction
+In RoadRunner r2024a, the traffic elements in the area are simulated and recreated based on Baidu Street View Maps. Then, according to the design requirements of the three typical autonomous driving scenarios, all necessary elements are added to the simulation scene. The final scenarios are available at [here](https://github.com/yanjie99/HDMapII/tree/main/code/Scenarios)
+
+#### Scenario simulation
+- Configure the [connection with RoadRunner](https://ww2.mathworks.cn/help/driving/ug/connect-matlab-and-roadrunner.html) in MATLAB.
+- Establish a secure [connection in MATLAB with an MQTT](https://ww2.mathworks.cn/help/icomm/ug/get-started-with-mqtt.html) broker and communicate with the MQTT broker.
+- The code for each scenario ([PGPS](https://github.com/yanjie99/HDMapII/tree/main/code/PGPS_MatlabCode), [UOS](https://github.com/yanjie99/HDMapII/tree/main/code/UOS_MatlabCode), [LSTCS](https://github.com/yanjie99/HDMapII/tree/main/code/LSTCS_MatlabCode)) integrates the information interaction methods applied in the specific scenario.
+- Run the simulation experiments after executing these codes in the following order (take PGPS simulation experiment for example).
+- - 1 step1.m -> step2_2.m -> step2.m
+- - 2 PGPS_AD1_V2V_Receive_final.m (Configure the information receiving port)
+- - 3 PGPS_interaction_p1ad1_2476.m (Information interaction simulation)
+- - 4 step4Velocity2Time_PGPS.m (Speed-time analysis of the actor.)
+- - 5 RouteOutput_PGPS.m & RouteOutputIndividually_PGPS.m (Path trajectory analysis of the actor.)
 
 ## 📄 License
 
