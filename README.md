@@ -13,6 +13,7 @@
 
 ## 📖 News
 
+- `[2024-8-18]` We have completed the organization of the repository contents and will continue to update this work.
 - `[2024-7-20]` We released our project website [here](https://github.com/yanjie99/HDMapII)
 
 ---
@@ -94,9 +95,9 @@ To test our proposed information interaction methods, we designed three specific
 
 
 ## 🛣️ Demo Video in RoadRunner combined with MATLAB
-The simulation code is available at [./code/PGPS_MatlabCode](), [./code/UOS_MatlabCode](), [./code/LSTCS_MatlabCode]() (Run at Matlab 2024a)
+The simulation code is available at [./code/PGPS_MatlabCode](https://github.com/yanjie99/HDMapII/tree/main/code/PGPS_MatlabCode), [./code/UOS_MatlabCode](https://github.com/yanjie99/HDMapII/tree/main/code/UOS_MatlabCode), [./code/LSTCS_MatlabCode](https://github.com/yanjie99/HDMapII/tree/main/code/LSTCS_MatlabCode) (Run at Matlab r2024a)
 
-The scenario design code is available at [./code/Scenarios]() (Built by RoadRunner r2024a)
+The scenario design code is available at [./code/Scenarios](https://github.com/yanjie99/HDMapII/tree/main/code/Scenes) (Built by [RoadRunner r2024a](https://ww2.mathworks.cn/en/products/roadrunner.html))
 
 - Pedestrian Ghost Probe Scenario
 [![Watch the video](https://img.youtube.com/vi/uWJD2UlZEeg/maxresdefault.jpg)](https://www.youtube.com/watch?v=uWJD2UlZEeg)
@@ -112,6 +113,14 @@ The scenario design code is available at [./code/Scenarios]() (Built by RoadRunn
 
 We conduct closed-loop tests in MATLAB. It can be seen that HDMapII can provide the prior information for connected autonomous vehicles, enabling them to make timely decisions. In contrast, regular vehicles, lacking interactive support methods, may spend more time on their journeys due to the inability to respond promptly to unexpected situations. 
 
+## 🔗 Dependencies
+- Matlab r202Xa(Remain consistent with RoadRunner version. For example, Matlab r2024a with RoadRunner r2024a)
+- [RoadRunner](https://ww2.mathworks.cn/en/products/roadrunner.html) r202Xa
+- PostgreSQL 16
+- roadrunner ([Connect MATLAB and RoadRunner to control and analyze simulations](https://ww2.mathworks.cn/help/driving/ug/connect-matlab-and-roadrunner.html))
+- ThingSpeak ([An IoT analytics platform service that allows you to aggregate, visualize and analyze live data streams in the cloud](https://thingspeak.com/pages/learn_more))
+- OpenStreetMap ([Target area map data source](https://www.openstreetmap.org/search?query=%E4%B8%8A%E6%B5%B7%E7%AB%B9%E6%9E%97%E8%B7%AF#map=18/31.22541/121.52887))
+- Simulink (Optional, only for further analysis)
 
 ## 📄 License
 
