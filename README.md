@@ -7,10 +7,6 @@
 [**Yanjie Zhang**](https://metayj.github.io/) *&* [**Wei Huang**](https://huangweibuct.github.io/weihuang.github.io/)
 
 
-<!-- Yanjie Zhang<sup>1,\*</sup>, Wei Huang<sup>1,2,3,\*,†</sup>, Akram Akbar<sup>2</sup>, Hangbin Wu<sup>1,2</sup>, Chun Liu<sup>1,2,\*,†</sup><br><-->
-<!-- <sup>1</sup> Urban Mobility Institute, Tongji University, China <sup>2</sup> College of Surveying and Geo-Informatics, Tongji University, China <sup>3</sup> Department of Civil Engineering, Toronto Metropolitan University, Canada<br>
-> <sup>\*</sup> Equal Contribution <sup>†</sup> Corresponding Authors-->
-
 ## 📖 News
 
 - `[2025-8-21]` The relevant journal paper has been published and is available at [here](https://doi.org/10.1080/17538947.2025.2552879).
