@@ -13,7 +13,7 @@
 
 ## 📖 News
 
-- `[2025-8-21]` The journal paper has published and is available at [here](https://doi.org/10.1080/17538947.2025.2552879).
+- `[2025-8-21]` The relevant journal paper has been published and is available at [here](https://doi.org/10.1080/17538947.2025.2552879).
 - `[2025-6-19]` Our simulation experiment supported the work of _Framework of updating and interaction for high-definition maps with vehicle-road-cloud context_.   
 - `[2024-8-18]` We have completed the organization of the repository contents and will continue to update this work.
 - `[2024-7-20]` We released our project website [here](https://github.com/yanjie99/HDMapII)
